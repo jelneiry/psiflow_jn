@@ -7,7 +7,7 @@ eval "$(./bin/micromamba shell hook -s posix)"
 micromamba activate
 micromamba create -n _psiflow_env -y python=3.10 pip ndcctools=7.14.0 -c conda-forge
 micromamba activate _psiflow_env
-pip install git+https://github.com/molmod/psiflow.git@v4.0.0
+pip install git+https://github.com/jelneiry/psiflow_jn
 
 # create activate.sh
 echo 'ORIGDIR=$PWD' >>activate.sh # prevent variable substitution
